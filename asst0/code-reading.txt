@@ -1,0 +1,53 @@
+Question 1. Which register number is used for the stack pointer (sp) in OS/161?  $29
+
+Question 2. What bus/busses does OS/161 support? LAMEbus
+
+Question 3. What is the difference between splhigh and spl0?
+		splhigh is defined as Set Priority Level high whitch disables all interrupts
+		spl0    is defined as Set Priority Level 0 which enables all interrupts.
+
+Question 4. What are some of the details which would make a function "machine dependent"? 
+	    Why might it be important to maintain this separation, instead of just putting 
+	    all of the code in one function?
+
+kern/arch/mips/mips: These are the source files containing the machine-dependent code that the kernel needs to run. Most of this code is quite low-level.
+
+Question 5. What does splx return? This function returns oldspl
+
+Question 6. What is the highest interrupt level? 15
+
+kern/asst0: This is the directory that contains the framework code that you will need to complete assignment 2. You can safely ignore it for now.
+
+kern/compile: This is where you build kernels. In the compile directory, you will find one subdirectory for each kernel you want to build. In a real installation, these will often correspond to things like a debug build, a profiling build, etc. In our world, each build directory will correspond to a programming assignment, e.g., ASST2, ASST3, etc. These directories are created when you configure a kernel (described in the next section). This directory and build organization is typical of UNIX installations and is not universal across all operating systems. kern/conf: config is the script that takes a config file, like ASST0, and creates the corresponding build directory. So, in order to build a kernel, you should:
+
+  % cd kern/conf
+  % ./config ASST0
+  % cd ../compile/ASST0
+  % make depend
+  % make
+This will create the ASST0 build directory and then actually build a kernel in it. Note that you should specify the complete pathname ./config when you configure OS/161. If you omit the ./, you may end up running the configuration command for the system on which you are building OS/161, and that is almost guaranteed to produce rather strange results!
+kern/dev: This is where all the low level device management code is stored. Unless you are really interested, you can safely ignore most of this directory.
+
+kern/include: These are the include files that the kernel needs. The kern subdirectory contains include files that are visible not only to the operating system itself, but also to user-level programs. (Think about why it's named "kern" and where the files end up when installed.)
+
+Question 7. How frequently are hardclock interrupts generated? 100hz
+
+Question 8. How large are OS/161 pids? How many processes do you think OS/161 could support as you have it now? A sentence or two of justification is fine.
+
+Question 9. What is the system call number for a reboot? Is this value available to userspace programs? Why or why not.
+
+kern/lib: These are library routines used throughout the kernel, e.g., managing sleep queues, run queues, kernel malloc, etc.
+
+Question 10. What is the purpose of functions like copyin and copyout in copyinout.c? What do they protect against? Where might you want to use these functions?
+
+kern/main: This is where the kernel is initialized and where the kernel main function is implemented.
+
+kern/thread: Threads are the fundamental abstraction on which the kernel is built.
+
+Question 11 Is it OK to initialize the thread system before the scheduler? Why (not)?
+
+Question 12. What are the possible states that a thread can be in? When do "zombie" threads finally get cleaned up?
+
+Question 13. What function puts a thread to sleep? When might you want to use this function?
+
+
