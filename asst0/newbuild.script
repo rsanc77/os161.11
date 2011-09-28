@@ -1,16 +1,51 @@
-Script started on Tue 27 Sep 2011 12:17:30 AM EDT
+Script started on Tue 27 Sep 2011 09:17:00 PM EDT
+bash-3.2$ cd ~/os161
+bash-3.2$ 
+bash-3.2$ ls
+asst0		 newbuild.script  os161-1.11.tar.gz  root
+build-asst0.php  os161-1.11	  README
+bash-3.2$ php build-asst0.php 
+Attempting to configure ...Checking for ranlib... yes
+Checking for <err.h>... yes
+Generating defs.mk.
+Configuration ASST0
+Generating files... opt-*.h files.mk defs.mk Makefile autoconf.h autoconf.c
+Configuration in ../compile/ASST0 done
+Remember to make depend
+Attempting to compile...cs161-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/generic/console.c ../../dev/lamebus/emu.c ../../dev/lamebus/lser.c ../../dev/lamebus/lhd.c ../../dev/generic/pseudorand.c ../../dev/generic/random.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/lamebus.c ../../dev/lamebus/lrandom.c ../../dev/generic/beep.c ../../dev/lamebus/ltrace.c ../../dev/generic/rtclock.c ../../dev/lamebus/ltimer_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/beep_ltimer.c ../../dev/generic/pseudorand_att.c ../../fs/sfs/sfs_vnode.c ../../fs/sfs/sfs_fs.c ../../arch/mips/mips/dumbvm.c ../../fs/sfs/sfs_io.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST0/autoconf.c > depend.mk
+../../main/main.c: In function ‘boot’:
+../../main/main.c:72: warning: implicit declaration of function ‘hello’
+../../main/hello.c: In function ‘hello’:
+../../main/hello.c:5: warning: implicit declaration of function ‘kprintf’
+cs161-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../main/main.c
+cs161-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../main/hello.c
+cs161-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../compile/ASST0/autoconf.c
+../../conf/newvers.sh ASST0
+*** This is ASST0 build #2 ***
+cs161-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs161-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 console.o emu.o lser.o lhd.o pseudorand.o random.o ltimer.o lamebus.o lrandom.o beep.o ltrace.o rtclock.o ltimer_att.o con_lser.o lhd_att.o random_lrandom.o rtclock_ltimer.o ltrace_att.o lser_att.o lrandom_att.o emu_att.o beep_ltimer.o pseudorand_att.o sfs_vnode.o sfs_fs.o dumbvm.o sfs_io.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs161-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 160808	    448	   7668	 168924	  293dc	kernel
+[ -d /home/rsanche1/os161/root ] || mkdir /home/rsanche1/os161/root
+cp kernel /home/rsanche1/os161/root/kernel-ASST0
+rm -f /home/rsanche1/os161/root/kernel
+ln -s kernel-ASST0 /home/rsanche1/os161/root/kernel
 bash-3.2$ cd root/
 bash-3.2$ ls
-DISK1.img  DISK2.img  kernel  kernel-ASST0  sys161.conf
-bash-3.2$ sys161 kernel
+kernel	kernel-ASST0  sys161.conf
+bash-3.2$ sys161 kernel
 sys161: System/161 release 1.14, compiled Aug 24 2011 10:55:58
 
 OS/161 base system version 1.11
 Copyright (c) 2000, 2001, 2002, 2003
    President and Fellows of Harvard College.  All rights reserved.
 
-Roberto_Sanchez system version 0 (ASST0 #2)
-Hello World
+Roberto Sanchez system version 0 (ASST0 #2)
+
+---------------------------------------
+Hello World 
+-----------------------------------------
 
 Cpu is MIPS r2000/r3000
 336k physical memory available
@@ -30,21 +65,14 @@ lser0 at lamebus0
 con0 at lser0
 pseudorand0 (virtual)
 
-OS/161 kernel [? for menu]: ?
-
-OS/161 kernel menu
-    [?o] Operations menu                [kh] Kernel heap stats              
-    [?t] Tests menu                     [q] Quit and shut down              
-
-Operation took 0.021617960 seconds
 OS/161 kernel [? for menu]: q
 Shutting down.
 The system is halted.
-sys161: 415641711 cycles (5333358k, 0u, 410308353i)
-sys161: 2491 irqs 0 exns 0r/0w disk 4r/865w console 0r/0w/1m emufs 0r/0w net
-sys161: Elapsed real time: 16.598539 seconds (25.0409 mhz)
-sys161: Elapsed virtual time: 16.625668440 seconds (25 mhz)
+sys161: 201104402 cycles (3533115k, 0u, 197571287i)
+sys161: 1473 irqs 0 exns 0r/0w disk 2r/698w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 7.939162 seconds (25.3307 mhz)
+sys161: Elapsed virtual time: 8.044176080 seconds (25 mhz)
 bash-3.2$ exit
 exit
 
-Script done on Tue 27 Sep 2011 12:18:04 AM EDT
+Script done on Tue 27 Sep 2011 09:18:02 PM EDT
