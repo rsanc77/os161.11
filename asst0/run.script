@@ -1,7 +1,10 @@
+edited by: Roberto Sanchez and Ahmed Abdelhay
+
 Script started on Mon 26 Sep 2011 10:20:05 PM EDT
 bash-3.2$ cd ~/os161/root/
 bash-3.2$ sys161 kernel
-sys161: System/161 release 1.14, compiled Aug 24 2011 10:55:58
+sys161: System/161 release 1.14, compiled Aug 24 2011 10:55:58
+
 
 OS/161 base system version 1.11
 Copyright (c) 2000, 2001, 2002, 2003
@@ -81,10 +84,14 @@ Operation took 0.053740000 seconds
 OS/161 kernel [? for menu]: q
 Shutting down.
 The system is halted.
-sys161: 1020676342 cycles (14632724k, 0u, 1006043618i)
-sys161: 6305 irqs 0 exns 0r/0w disk 13r/3020w console 0r/0w/1m emufs 0r/0w net
-sys161: Elapsed real time: 40.777866 seconds (25.0302 mhz)
-sys161: Elapsed virtual time: 40.827053680 seconds (25 mhz)
+sys161: 1020676342 cycles (14632724k, 0u, 1006043618i)
+
+sys161: 6305 irqs 0 exns 0r/0w disk 13r/3020w console 0r/0w/1m emufs 0r/0w net
+
+sys161: Elapsed real time: 40.777866 seconds (25.0302 mhz)
+
+sys161: Elapsed virtual time: 40.827053680 seconds (25 mhz)
+
 bash-3.2$ exit
 exit
 
