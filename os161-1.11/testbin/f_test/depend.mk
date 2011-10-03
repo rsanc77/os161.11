@@ -38,3 +38,4 @@ f_write.o: \
  $(OSTREE)/include/stdarg.h \
  $(OSTREE)/include/err.h \
  f_hdr.h
+

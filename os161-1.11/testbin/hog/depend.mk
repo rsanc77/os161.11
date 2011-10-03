@@ -1,3 +1,4 @@
 
 hog.o: \
  hog.c
+

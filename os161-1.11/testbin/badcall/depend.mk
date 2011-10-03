@@ -431,3 +431,4 @@ driver.o: \
  $(OSTREE)/include/err.h \
  config.h \
  test.h
+

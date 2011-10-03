@@ -14,3 +14,4 @@ rmtest.o: \
  $(OSTREE)/include/errno.h \
  $(OSTREE)/include/kern/errno.h \
  $(OSTREE)/include/err.h
+

@@ -14,3 +14,4 @@ dirseek.o: \
  $(OSTREE)/include/stdarg.h \
  $(OSTREE)/include/stdlib.h \
  $(OSTREE)/include/err.h
+

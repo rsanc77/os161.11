@@ -27,3 +27,4 @@ main.o: \
  $(OSTREE)/include/stdarg.h \
  $(OSTREE)/include/string.h \
  extern.h
+

@@ -10,3 +10,4 @@ cat.o: \
  $(OSTREE)/include/string.h \
  $(OSTREE)/include/err.h \
  $(OSTREE)/include/stdarg.h
+

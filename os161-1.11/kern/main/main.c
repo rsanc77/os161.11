@@ -70,7 +70,7 @@ boot(void)
 	kprintf("%s", harvard_copyright);
 	kprintf("\n");
 
-	kprintf("Roberto Sanchez system version %s (%s #%d)\n", 
+	kprintf("Roberto Sanchez & Ahmed Abdelhay system version %s (%s #%d)\n", 
 		GROUP_VERSION, buildconfig, buildversion);
         kprintf("\n---------------------------------------\n");
         hello();

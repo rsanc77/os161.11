@@ -8,7 +8,9 @@ Question 3. What is the difference between splhigh and spl0?
 
 Question 4. What are some of the details which would make a function "machine dependent"? 
 	    Why might it be important to maintain this separation, instead of just putting 
-	    all of the code in one function?
+	    all of the code in one function? 
+	    If a function uses system specific calls. It would be the case
+	    that the function is machine dependant.
 
 kern/arch/mips/mips: These are the source files containing the machine-dependent code that the kernel needs to run. Most of this code is quite low-level.
 

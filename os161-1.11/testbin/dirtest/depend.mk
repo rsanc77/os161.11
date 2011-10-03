@@ -13,3 +13,4 @@ dirtest.o: \
  $(OSTREE)/include/kern/ioctl.h \
  $(OSTREE)/include/string.h \
  $(OSTREE)/include/err.h
+

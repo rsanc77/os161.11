@@ -8,3 +8,4 @@ time.ho: \
 hostcompat.ho: \
  hostcompat.c \
  hostcompat.h
+

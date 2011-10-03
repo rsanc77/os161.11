@@ -34,3 +34,4 @@ disk.o: \
  disk.h
 support.o: \
  support.c
+
