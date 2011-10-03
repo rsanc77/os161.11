@@ -1,3 +1,5 @@
+edited by: Roberto Sanchez and Ahmed Abdelhay
+
 Question 1. Which register number is used for the stack pointer (sp) in OS/161?  $29
 
 Question 2. What bus/busses does OS/161 support? LAMEbus
