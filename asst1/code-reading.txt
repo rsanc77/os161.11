@@ -1,0 +1,19 @@
+Thread Questions
+
+1.  What happens to a thread when it exits (i.e., calls thread_exit())? What about when it sleeps?
+	This function call causes the current thread to exit.
+2.  What function(s) handle(s) a context switch?
+3.  What does it mean for a thread to be in each of the possible thread states?
+4.  What does it mean to turn interrupts off? How is this accomplished? Why is it important to turn off interrupts in the thread subsystem code?
+5.  What happens when a thread wakes up another thread? How does a sleeping thread get to run again?
+
+  Scheduler Questions
+
+6.  What function is responsible for choosing the next thread to run?
+7.  How does that function pick the next thread?
+8.  What role does the hardware timer play in scheduling? What hardware independent function is called on a timer interrupt?
+
+  Synchronization Questions
+
+9.  Describe how thread_sleep() and thread_wakeup() are used to implement semaphores. What is the purpose of the argument passed to thread_sleep()?
+10. Why does the lock API in OS/161 provide lock_do_i_hold(), but not lock_get_holder()?
