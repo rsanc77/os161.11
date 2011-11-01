@@ -149,6 +149,7 @@ lock_release(struct lock *lock)
 int
 lock_do_i_hold(struct lock *lock)
 {
+	return(lock_cur_owner == cur_thread);
 	// Write this
 
 	(void)lock;  // suppress warning until code gets written
